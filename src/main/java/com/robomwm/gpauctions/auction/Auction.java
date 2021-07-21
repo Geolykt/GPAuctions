@@ -4,12 +4,13 @@ import com.robomwm.gpauctions.Config;
 import com.robomwm.gpauctions.GPAuctions;
 import com.robomwm.usefulutils.UsefulUtils;
 import me.ryanhamshire.GriefPrevention.Claim;
+
+import org.apache.commons.lang.NotImplementedException;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.block.Sign;
 import org.bukkit.configuration.serialization.ConfigurationSerializable;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -139,7 +140,7 @@ public class Auction implements ConfigurationSerializable
 
     private boolean cancelBid(UUID playerUUID)
     {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException("Not implemented.");
     }
 
     public Collection<Bid> getBids()
